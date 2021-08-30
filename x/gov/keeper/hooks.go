@@ -1,8 +1,8 @@
 package keeper
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
+	sdk "github.com/cosmos/cosmos-sdk/v43/types"
+	"github.com/cosmos/cosmos-sdk/v43/x/gov/types"
 )
 
 // Implements GovHooks interface

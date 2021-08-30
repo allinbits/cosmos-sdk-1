@@ -7,13 +7,13 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/version"
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
+	"github.com/cosmos/cosmos-sdk/v43/client"
+	"github.com/cosmos/cosmos-sdk/v43/client/flags"
+	"github.com/cosmos/cosmos-sdk/v43/client/tx"
+	sdk "github.com/cosmos/cosmos-sdk/v43/types"
+	"github.com/cosmos/cosmos-sdk/v43/version"
+	"github.com/cosmos/cosmos-sdk/v43/x/distribution/types"
+	govtypes "github.com/cosmos/cosmos-sdk/v43/x/gov/types"
 )
 
 // Transaction flags for the x/distribution module

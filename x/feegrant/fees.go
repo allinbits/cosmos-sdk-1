@@ -1,7 +1,7 @@
 package feegrant
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/cosmos/cosmos-sdk/v43/types"
 )
 
 // FeeAllowance implementations are tied to a given fee delegator and delegatee,

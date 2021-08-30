@@ -7,15 +7,15 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/v43/client"
+	"github.com/cosmos/cosmos-sdk/v43/client/flags"
+	"github.com/cosmos/cosmos-sdk/v43/crypto/hd"
+	"github.com/cosmos/cosmos-sdk/v43/crypto/keyring"
+	"github.com/cosmos/cosmos-sdk/v43/crypto/keys/multisig"
+	"github.com/cosmos/cosmos-sdk/v43/crypto/keys/secp256k1"
+	cryptotypes "github.com/cosmos/cosmos-sdk/v43/crypto/types"
+	"github.com/cosmos/cosmos-sdk/v43/testutil"
+	sdk "github.com/cosmos/cosmos-sdk/v43/types"
 )
 
 func Test_multiSigKey_Properties(t *testing.T) {

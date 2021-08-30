@@ -3,9 +3,9 @@ package keeper
 import (
 	"context"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/x/authz"
+	sdk "github.com/cosmos/cosmos-sdk/v43/types"
+	sdkerrors "github.com/cosmos/cosmos-sdk/v43/types/errors"
+	"github.com/cosmos/cosmos-sdk/v43/x/authz"
 )
 
 var _ authz.MsgServer = Keeper{}

@@ -7,11 +7,11 @@ import (
 	"github.com/stretchr/testify/require"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/simapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/slashing"
-	"github.com/cosmos/cosmos-sdk/x/slashing/testslashing"
-	"github.com/cosmos/cosmos-sdk/x/slashing/types"
+	"github.com/cosmos/cosmos-sdk/v43/simapp"
+	sdk "github.com/cosmos/cosmos-sdk/v43/types"
+	"github.com/cosmos/cosmos-sdk/v43/x/slashing"
+	"github.com/cosmos/cosmos-sdk/v43/x/slashing/testslashing"
+	"github.com/cosmos/cosmos-sdk/v43/x/slashing/types"
 )
 
 func TestExportAndInitGenesis(t *testing.T) {

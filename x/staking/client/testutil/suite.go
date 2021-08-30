@@ -12,17 +12,17 @@ import (
 	"github.com/tendermint/tendermint/proto/tendermint/crypto"
 	"github.com/tendermint/tendermint/rpc/client/http"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	banktestutil "github.com/cosmos/cosmos-sdk/x/bank/client/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking/client/cli"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/cosmos/cosmos-sdk/v43/client/flags"
+	"github.com/cosmos/cosmos-sdk/v43/crypto/hd"
+	"github.com/cosmos/cosmos-sdk/v43/crypto/keyring"
+	"github.com/cosmos/cosmos-sdk/v43/crypto/keys/ed25519"
+	clitestutil "github.com/cosmos/cosmos-sdk/v43/testutil/cli"
+	"github.com/cosmos/cosmos-sdk/v43/testutil/network"
+	sdk "github.com/cosmos/cosmos-sdk/v43/types"
+	"github.com/cosmos/cosmos-sdk/v43/types/query"
+	banktestutil "github.com/cosmos/cosmos-sdk/v43/x/bank/client/testutil"
+	"github.com/cosmos/cosmos-sdk/v43/x/staking/client/cli"
+	"github.com/cosmos/cosmos-sdk/v43/x/staking/types"
 )
 
 type IntegrationTestSuite struct {
@@ -1292,7 +1292,7 @@ func (s *IntegrationTestSuite) TestNewUnbondCmd() {
 
 // TestBlockResults tests that the validator updates correctly show when
 // calling the /block_results RPC endpoint.
-// ref: https://github.com/cosmos/cosmos-sdk/issues/7401.
+// ref: https://github.com/cosmos/cosmos-sdk/v43/issues/7401.
 func (s *IntegrationTestSuite) TestBlockResults() {
 	require := s.Require()
 	val := s.network.Validators[0]

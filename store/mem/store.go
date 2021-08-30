@@ -5,11 +5,11 @@ import (
 
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/cosmos/cosmos-sdk/store/cachekv"
-	"github.com/cosmos/cosmos-sdk/store/dbadapter"
-	"github.com/cosmos/cosmos-sdk/store/listenkv"
-	"github.com/cosmos/cosmos-sdk/store/tracekv"
-	"github.com/cosmos/cosmos-sdk/store/types"
+	"github.com/cosmos/cosmos-sdk/v43/store/cachekv"
+	"github.com/cosmos/cosmos-sdk/v43/store/dbadapter"
+	"github.com/cosmos/cosmos-sdk/v43/store/listenkv"
+	"github.com/cosmos/cosmos-sdk/v43/store/tracekv"
+	"github.com/cosmos/cosmos-sdk/v43/store/types"
 )
 
 var (

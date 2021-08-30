@@ -3,10 +3,10 @@
 package legacybech32
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec/legacy"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/bech32"
+	"github.com/cosmos/cosmos-sdk/v43/codec/legacy"
+	cryptotypes "github.com/cosmos/cosmos-sdk/v43/crypto/types"
+	sdk "github.com/cosmos/cosmos-sdk/v43/types"
+	"github.com/cosmos/cosmos-sdk/v43/types/bech32"
 )
 
 // TODO: when removing this package remove:

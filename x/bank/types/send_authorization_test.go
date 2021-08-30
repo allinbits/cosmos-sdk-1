@@ -6,9 +6,9 @@ import (
 	"github.com/stretchr/testify/require"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/simapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/cosmos/cosmos-sdk/v43/simapp"
+	sdk "github.com/cosmos/cosmos-sdk/v43/types"
+	"github.com/cosmos/cosmos-sdk/v43/x/bank/types"
 )
 
 var (
@@ -24,7 +24,7 @@ func TestSendAuthorization(t *testing.T) {
 	authorization := types.NewSendAuthorization(coins1000)
 
 	t.Log("verify authorization returns valid method name")
-	require.Equal(t, authorization.MsgTypeURL(), "/cosmos.bank.v1beta1.MsgSend")
+	require.Equal(t, authorization.MsgTypeURL(), "/cosmos.bank.v43beta1.MsgSend")
 	require.NoError(t, authorization.ValidateBasic())
 	send := types.NewMsgSend(fromAddr, toAddr, coins1000)
 
@@ -37,7 +37,7 @@ func TestSendAuthorization(t *testing.T) {
 	require.Nil(t, resp.Updated)
 
 	authorization = types.NewSendAuthorization(coins1000)
-	require.Equal(t, authorization.MsgTypeURL(), "/cosmos.bank.v1beta1.MsgSend")
+	require.Equal(t, authorization.MsgTypeURL(), "/cosmos.bank.v43beta1.MsgSend")
 	require.NoError(t, authorization.ValidateBasic())
 	send = types.NewMsgSend(fromAddr, toAddr, coins500)
 	require.NoError(t, authorization.ValidateBasic())

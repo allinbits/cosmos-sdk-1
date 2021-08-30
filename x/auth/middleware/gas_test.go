@@ -6,13 +6,13 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/tx"
-	"github.com/cosmos/cosmos-sdk/x/auth/middleware"
-	"github.com/cosmos/cosmos-sdk/x/auth/signing"
+	cryptotypes "github.com/cosmos/cosmos-sdk/v43/crypto/types"
+	"github.com/cosmos/cosmos-sdk/v43/testutil/testdata"
+	sdk "github.com/cosmos/cosmos-sdk/v43/types"
+	sdkerrors "github.com/cosmos/cosmos-sdk/v43/types/errors"
+	"github.com/cosmos/cosmos-sdk/v43/types/tx"
+	"github.com/cosmos/cosmos-sdk/v43/x/auth/middleware"
+	"github.com/cosmos/cosmos-sdk/v43/x/auth/signing"
 )
 
 // txTest is a dummy tx that doesn't implement GasTx. It should set the GasMeter

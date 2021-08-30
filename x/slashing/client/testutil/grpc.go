@@ -6,11 +6,11 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/x/slashing/types"
+	"github.com/cosmos/cosmos-sdk/v43/testutil"
+	sdk "github.com/cosmos/cosmos-sdk/v43/types"
+	grpctypes "github.com/cosmos/cosmos-sdk/v43/types/grpc"
+	"github.com/cosmos/cosmos-sdk/v43/types/query"
+	"github.com/cosmos/cosmos-sdk/v43/x/slashing/types"
 )
 
 func (s *IntegrationTestSuite) TestGRPCQueries() {
@@ -29,7 +29,7 @@ func (s *IntegrationTestSuite) TestGRPCQueries() {
 	}{
 		{
 			"get signing infos (height specific)",
-			fmt.Sprintf("%s/cosmos/slashing/v1beta1/signing_infos", baseURL),
+			fmt.Sprintf("%s/cosmos/slashing/v43beta1/signing_infos", baseURL),
 			map[string]string{
 				grpctypes.GRPCBlockHeightHeader: "1",
 			},
@@ -49,7 +49,7 @@ func (s *IntegrationTestSuite) TestGRPCQueries() {
 		},
 		{
 			"get signing info (height specific)",
-			fmt.Sprintf("%s/cosmos/slashing/v1beta1/signing_infos/%s", baseURL, consAddr),
+			fmt.Sprintf("%s/cosmos/slashing/v43beta1/signing_infos/%s", baseURL, consAddr),
 			map[string]string{
 				grpctypes.GRPCBlockHeightHeader: "1",
 			},
@@ -64,7 +64,7 @@ func (s *IntegrationTestSuite) TestGRPCQueries() {
 		},
 		{
 			"get signing info wrong address",
-			fmt.Sprintf("%s/cosmos/slashing/v1beta1/signing_infos/%s", baseURL, "wrongAddress"),
+			fmt.Sprintf("%s/cosmos/slashing/v43beta1/signing_infos/%s", baseURL, "wrongAddress"),
 			map[string]string{},
 			true,
 			&types.QuerySigningInfoResponse{},
@@ -72,7 +72,7 @@ func (s *IntegrationTestSuite) TestGRPCQueries() {
 		},
 		{
 			"params",
-			fmt.Sprintf("%s/cosmos/slashing/v1beta1/params", baseURL),
+			fmt.Sprintf("%s/cosmos/slashing/v43beta1/params", baseURL),
 			map[string]string{},
 			false,
 			&types.QueryParamsResponse{},

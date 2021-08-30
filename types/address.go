@@ -12,11 +12,11 @@ import (
 	"github.com/hashicorp/golang-lru/simplelru"
 	yaml "gopkg.in/yaml.v2"
 
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/internal/conv"
-	"github.com/cosmos/cosmos-sdk/types/address"
-	"github.com/cosmos/cosmos-sdk/types/bech32"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	cryptotypes "github.com/cosmos/cosmos-sdk/v43/crypto/types"
+	"github.com/cosmos/cosmos-sdk/v43/internal/conv"
+	"github.com/cosmos/cosmos-sdk/v43/types/address"
+	"github.com/cosmos/cosmos-sdk/v43/types/bech32"
+	sdkerrors "github.com/cosmos/cosmos-sdk/v43/types/errors"
 )
 
 const (
@@ -138,7 +138,7 @@ func AccAddressFromHex(address string) (addr AccAddress, err error) {
 // according to the default address rules or a custom address verifier set by
 // GetConfig().SetAddressVerifier().
 // TODO make an issue to get rid of global Config
-// ref: https://github.com/cosmos/cosmos-sdk/issues/9690
+// ref: https://github.com/cosmos/cosmos-sdk/v43/issues/9690
 func VerifyAddressFormat(bz []byte) error {
 	verifier := GetConfig().GetAddressVerifier()
 	if verifier != nil {

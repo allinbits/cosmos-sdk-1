@@ -8,10 +8,10 @@ import (
 	tmos "github.com/tendermint/tendermint/libs/os"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/cosmos/cosmos-sdk/crypto"
-	"github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/cosmos/cosmos-sdk/v43/crypto"
+	"github.com/cosmos/cosmos-sdk/v43/crypto/types"
+	sdk "github.com/cosmos/cosmos-sdk/v43/types"
+	sdkerrors "github.com/cosmos/cosmos-sdk/v43/types/errors"
 )
 
 // LegacyKeybase is implemented by the legacy keybase implementation.

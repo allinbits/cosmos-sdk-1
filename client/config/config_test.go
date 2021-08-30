@@ -9,11 +9,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/config"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/x/staking/client/cli"
+	"github.com/cosmos/cosmos-sdk/v43/client"
+	"github.com/cosmos/cosmos-sdk/v43/client/config"
+	"github.com/cosmos/cosmos-sdk/v43/client/flags"
+	clitestutil "github.com/cosmos/cosmos-sdk/v43/testutil/cli"
+	"github.com/cosmos/cosmos-sdk/v43/x/staking/client/cli"
 )
 
 const (

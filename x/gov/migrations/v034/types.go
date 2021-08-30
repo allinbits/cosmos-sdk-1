@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/v43/codec"
+	sdk "github.com/cosmos/cosmos-sdk/v43/types"
 )
 
 var (

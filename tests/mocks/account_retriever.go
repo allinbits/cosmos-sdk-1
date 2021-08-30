@@ -7,9 +7,9 @@ package mocks
 import (
 	reflect "reflect"
 
-	client "github.com/cosmos/cosmos-sdk/client"
-	types "github.com/cosmos/cosmos-sdk/crypto/types"
-	types0 "github.com/cosmos/cosmos-sdk/types"
+	client "github.com/cosmos/cosmos-sdk/v43/client"
+	types "github.com/cosmos/cosmos-sdk/v43/crypto/types"
+	types0 "github.com/cosmos/cosmos-sdk/v43/types"
 	gomock "github.com/golang/mock/gomock"
 )
 

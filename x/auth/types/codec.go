@@ -1,10 +1,10 @@
 package types
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
+	"github.com/cosmos/cosmos-sdk/v43/codec"
+	"github.com/cosmos/cosmos-sdk/v43/codec/types"
+	cryptocodec "github.com/cosmos/cosmos-sdk/v43/crypto/codec"
+	"github.com/cosmos/cosmos-sdk/v43/x/auth/migrations/legacytx"
 )
 
 // RegisterLegacyAminoCodec registers the account interfaces and concrete types on the
@@ -23,14 +23,14 @@ func RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {
 // and creates a registry of it's concrete implementations
 func RegisterInterfaces(registry types.InterfaceRegistry) {
 	registry.RegisterInterface(
-		"cosmos.auth.v1beta1.AccountI",
+		"cosmos.auth.v43beta1.AccountI",
 		(*AccountI)(nil),
 		&BaseAccount{},
 		&ModuleAccount{},
 	)
 
 	registry.RegisterInterface(
-		"cosmos.auth.v1beta1.GenesisAccount",
+		"cosmos.auth.v43beta1.GenesisAccount",
 		(*GenesisAccount)(nil),
 		&BaseAccount{},
 		&ModuleAccount{},

@@ -9,10 +9,10 @@ import (
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/input"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/v43/client/flags"
+	"github.com/cosmos/cosmos-sdk/v43/client/input"
+	"github.com/cosmos/cosmos-sdk/v43/crypto/keyring"
+	sdk "github.com/cosmos/cosmos-sdk/v43/types"
 )
 
 // migratePassphrase is used as a no-op migration key passphrase as a passphrase

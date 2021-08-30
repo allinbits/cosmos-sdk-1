@@ -3,13 +3,13 @@ package testutil
 import (
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
+	"github.com/cosmos/cosmos-sdk/v43/testutil"
+	sdk "github.com/cosmos/cosmos-sdk/v43/types"
+	grpctypes "github.com/cosmos/cosmos-sdk/v43/types/grpc"
 
 	"github.com/gogo/protobuf/proto"
 
-	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
+	minttypes "github.com/cosmos/cosmos-sdk/v43/x/mint/types"
 )
 
 func (s *IntegrationTestSuite) TestQueryGRPC() {
@@ -24,7 +24,7 @@ func (s *IntegrationTestSuite) TestQueryGRPC() {
 	}{
 		{
 			"gRPC request params",
-			fmt.Sprintf("%s/cosmos/mint/v1beta1/params", baseURL),
+			fmt.Sprintf("%s/cosmos/mint/v43beta1/params", baseURL),
 			map[string]string{},
 			&minttypes.QueryParamsResponse{},
 			&minttypes.QueryParamsResponse{
@@ -34,7 +34,7 @@ func (s *IntegrationTestSuite) TestQueryGRPC() {
 		},
 		{
 			"gRPC request inflation",
-			fmt.Sprintf("%s/cosmos/mint/v1beta1/inflation", baseURL),
+			fmt.Sprintf("%s/cosmos/mint/v43beta1/inflation", baseURL),
 			map[string]string{},
 			&minttypes.QueryInflationResponse{},
 			&minttypes.QueryInflationResponse{
@@ -43,7 +43,7 @@ func (s *IntegrationTestSuite) TestQueryGRPC() {
 		},
 		{
 			"gRPC request annual provisions",
-			fmt.Sprintf("%s/cosmos/mint/v1beta1/annual_provisions", baseURL),
+			fmt.Sprintf("%s/cosmos/mint/v43beta1/annual_provisions", baseURL),
 			map[string]string{
 				grpctypes.GRPCBlockHeightHeader: "1",
 			},

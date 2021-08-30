@@ -7,11 +7,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	simappparams "github.com/cosmos/cosmos-sdk/simapp/params"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/cosmos/cosmos-sdk/v43/client"
+	simappparams "github.com/cosmos/cosmos-sdk/v43/simapp/params"
+	"github.com/cosmos/cosmos-sdk/v43/testutil"
+	sdk "github.com/cosmos/cosmos-sdk/v43/types"
+	authtypes "github.com/cosmos/cosmos-sdk/v43/x/auth/types"
 )
 
 func TestGetCommandEncode(t *testing.T) {

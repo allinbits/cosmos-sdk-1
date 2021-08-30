@@ -5,9 +5,9 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/tx"
+	sdk "github.com/cosmos/cosmos-sdk/v43/types"
+	sdkerrors "github.com/cosmos/cosmos-sdk/v43/types/errors"
+	"github.com/cosmos/cosmos-sdk/v43/types/tx"
 )
 
 type legacyAnteTxHandler struct {
@@ -71,7 +71,7 @@ func (txh legacyAnteTxHandler) runAnte(ctx context.Context, tx sdk.Tx, txBytes [
 
 	// Branch context before AnteHandler call in case it aborts.
 	// This is required for both CheckTx and DeliverTx.
-	// Ref: https://github.com/cosmos/cosmos-sdk/issues/2772
+	// Ref: https://github.com/cosmos/cosmos-sdk/v43/issues/2772
 	//
 	// NOTE: Alternatively, we could require that AnteHandler ensures that
 	// writes do not happen if aborted/failed.  This may have some

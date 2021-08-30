@@ -6,9 +6,9 @@ import (
 
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/cosmos/cosmos-sdk/store/dbadapter"
-	"github.com/cosmos/cosmos-sdk/store/gaskv"
-	"github.com/cosmos/cosmos-sdk/store/types"
+	"github.com/cosmos/cosmos-sdk/v43/store/dbadapter"
+	"github.com/cosmos/cosmos-sdk/v43/store/gaskv"
+	"github.com/cosmos/cosmos-sdk/v43/store/types"
 
 	"github.com/stretchr/testify/require"
 )

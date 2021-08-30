@@ -9,10 +9,10 @@ import (
 	"github.com/tendermint/tendermint/p2p"
 	ctypes "github.com/tendermint/tendermint/rpc/core/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	"github.com/cosmos/cosmos-sdk/v43/client"
+	"github.com/cosmos/cosmos-sdk/v43/client/flags"
+	cryptocodec "github.com/cosmos/cosmos-sdk/v43/crypto/codec"
+	cryptotypes "github.com/cosmos/cosmos-sdk/v43/crypto/types"
 )
 
 // ValidatorInfo is info about the node's validator, same as Tendermint,

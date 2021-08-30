@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/cosmos/cosmos-sdk/v43/version"
 )
 
 // DefaultKeyringServiceName defines a default service name for the keyring.

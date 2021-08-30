@@ -1,12 +1,12 @@
 package types
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/msgservice"
-	"github.com/cosmos/cosmos-sdk/x/evidence/exported"
+	"github.com/cosmos/cosmos-sdk/v43/codec"
+	"github.com/cosmos/cosmos-sdk/v43/codec/types"
+	cryptocodec "github.com/cosmos/cosmos-sdk/v43/crypto/codec"
+	sdk "github.com/cosmos/cosmos-sdk/v43/types"
+	"github.com/cosmos/cosmos-sdk/v43/types/msgservice"
+	"github.com/cosmos/cosmos-sdk/v43/x/evidence/exported"
 )
 
 // RegisterLegacyAminoCodec registers all the necessary types and interfaces for the
@@ -20,7 +20,7 @@ func RegisterLegacyAminoCodec(cdc *codec.LegacyAmino) {
 func RegisterInterfaces(registry types.InterfaceRegistry) {
 	registry.RegisterImplementations((*sdk.Msg)(nil), &MsgSubmitEvidence{})
 	registry.RegisterInterface(
-		"cosmos.evidence.v1beta1.Evidence",
+		"cosmos.evidence.v43beta1.Evidence",
 		(*exported.Evidence)(nil),
 		&Equivocation{},
 	)

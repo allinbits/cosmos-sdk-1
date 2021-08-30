@@ -1,6 +1,6 @@
 package keeper_test
 
-import sdk "github.com/cosmos/cosmos-sdk/types"
+import sdk "github.com/cosmos/cosmos-sdk/v43/types"
 
 var (
 	// The default power validators are initialized to have within tests

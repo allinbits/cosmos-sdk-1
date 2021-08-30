@@ -1,12 +1,12 @@
 package v044
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/store/prefix"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
-	v043 "github.com/cosmos/cosmos-sdk/x/bank/migrations/v043"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/cosmos/cosmos-sdk/v43/codec"
+	"github.com/cosmos/cosmos-sdk/v43/store/prefix"
+	sdk "github.com/cosmos/cosmos-sdk/v43/types"
+	"github.com/cosmos/cosmos-sdk/v43/types/address"
+	v043 "github.com/cosmos/cosmos-sdk/v43/x/bank/migrations/v043"
+	"github.com/cosmos/cosmos-sdk/v43/x/bank/types"
 )
 
 // MigrateStore performs in-place store migrations from v0.43 to v0.44. The

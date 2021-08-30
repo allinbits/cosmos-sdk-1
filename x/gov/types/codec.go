@@ -1,11 +1,11 @@
 package types
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/msgservice"
+	"github.com/cosmos/cosmos-sdk/v43/codec"
+	"github.com/cosmos/cosmos-sdk/v43/codec/types"
+	cryptocodec "github.com/cosmos/cosmos-sdk/v43/crypto/codec"
+	sdk "github.com/cosmos/cosmos-sdk/v43/types"
+	"github.com/cosmos/cosmos-sdk/v43/types/msgservice"
 )
 
 // RegisterLegacyAminoCodec registers all the necessary types and interfaces for the
@@ -27,7 +27,7 @@ func RegisterInterfaces(registry types.InterfaceRegistry) {
 		&MsgDeposit{},
 	)
 	registry.RegisterInterface(
-		"cosmos.gov.v1beta1.Content",
+		"cosmos.gov.v43beta1.Content",
 		(*Content)(nil),
 		&TextProposal{},
 	)

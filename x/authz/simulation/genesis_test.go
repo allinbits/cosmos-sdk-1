@@ -7,11 +7,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/simapp"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/authz"
-	"github.com/cosmos/cosmos-sdk/x/authz/simulation"
+	"github.com/cosmos/cosmos-sdk/v43/simapp"
+	"github.com/cosmos/cosmos-sdk/v43/types/module"
+	simtypes "github.com/cosmos/cosmos-sdk/v43/types/simulation"
+	"github.com/cosmos/cosmos-sdk/v43/x/authz"
+	"github.com/cosmos/cosmos-sdk/v43/x/authz/simulation"
 )
 
 func TestRandomizedGenState(t *testing.T) {

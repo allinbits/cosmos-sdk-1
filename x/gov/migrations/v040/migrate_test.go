@@ -6,14 +6,14 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/simapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	v036distr "github.com/cosmos/cosmos-sdk/x/distribution/migrations/v036"
-	v036gov "github.com/cosmos/cosmos-sdk/x/gov/migrations/v036"
-	v040gov "github.com/cosmos/cosmos-sdk/x/gov/migrations/v040"
-	v036params "github.com/cosmos/cosmos-sdk/x/params/migrations/v036"
-	v038upgrade "github.com/cosmos/cosmos-sdk/x/upgrade/migrations/v038"
+	"github.com/cosmos/cosmos-sdk/v43/client"
+	"github.com/cosmos/cosmos-sdk/v43/simapp"
+	sdk "github.com/cosmos/cosmos-sdk/v43/types"
+	v036distr "github.com/cosmos/cosmos-sdk/v43/x/distribution/migrations/v036"
+	v036gov "github.com/cosmos/cosmos-sdk/v43/x/gov/migrations/v036"
+	v040gov "github.com/cosmos/cosmos-sdk/v43/x/gov/migrations/v040"
+	v036params "github.com/cosmos/cosmos-sdk/v43/x/params/migrations/v036"
+	v038upgrade "github.com/cosmos/cosmos-sdk/v43/x/upgrade/migrations/v038"
 )
 
 func TestMigrate(t *testing.T) {
@@ -103,7 +103,7 @@ func TestMigrate(t *testing.T) {
 	"proposals": [
 		{
 			"content": {
-				"@type": "/cosmos.gov.v1beta1.TextProposal",
+				"@type": "/cosmos.gov.v43beta1.TextProposal",
 				"description": "bar_text",
 				"title": "foo_text"
 			},
@@ -123,7 +123,7 @@ func TestMigrate(t *testing.T) {
 		},
 		{
 			"content": {
-				"@type": "/cosmos.distribution.v1beta1.CommunityPoolSpendProposal",
+				"@type": "/cosmos.distribution.v43beta1.CommunityPoolSpendProposal",
 				"amount": [
 					{
 						"amount": "2",
@@ -150,7 +150,7 @@ func TestMigrate(t *testing.T) {
 		},
 		{
 			"content": {
-				"@type": "/cosmos.upgrade.v1beta1.CancelSoftwareUpgradeProposal",
+				"@type": "/cosmos.upgrade.v43beta1.CancelSoftwareUpgradeProposal",
 				"description": "bar_cancel_upgrade",
 				"title": "foo_cancel_upgrade"
 			},
@@ -170,7 +170,7 @@ func TestMigrate(t *testing.T) {
 		},
 		{
 			"content": {
-				"@type": "/cosmos.upgrade.v1beta1.SoftwareUpgradeProposal",
+				"@type": "/cosmos.upgrade.v43beta1.SoftwareUpgradeProposal",
 				"description": "bar_software_upgrade",
 				"plan": {
 					"height": "123",
@@ -197,7 +197,7 @@ func TestMigrate(t *testing.T) {
 		},
 		{
 			"content": {
-				"@type": "/cosmos.params.v1beta1.ParameterChangeProposal",
+				"@type": "/cosmos.params.v43beta1.ParameterChangeProposal",
 				"changes": [
 					{
 						"key": "foo_param_change_key",

@@ -1,8 +1,8 @@
 package v043
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	v040distribution "github.com/cosmos/cosmos-sdk/x/distribution/migrations/v040"
+	sdk "github.com/cosmos/cosmos-sdk/v43/types"
+	v040distribution "github.com/cosmos/cosmos-sdk/v43/x/distribution/migrations/v040"
 )
 
 // MigrateStore performs in-place store migrations from v0.40 to v0.43. The

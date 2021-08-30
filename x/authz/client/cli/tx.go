@@ -8,15 +8,15 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/version"
-	authclient "github.com/cosmos/cosmos-sdk/x/auth/client"
-	"github.com/cosmos/cosmos-sdk/x/authz"
-	bank "github.com/cosmos/cosmos-sdk/x/bank/types"
-	staking "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/cosmos/cosmos-sdk/v43/client"
+	"github.com/cosmos/cosmos-sdk/v43/client/flags"
+	"github.com/cosmos/cosmos-sdk/v43/client/tx"
+	sdk "github.com/cosmos/cosmos-sdk/v43/types"
+	"github.com/cosmos/cosmos-sdk/v43/version"
+	authclient "github.com/cosmos/cosmos-sdk/v43/x/auth/client"
+	"github.com/cosmos/cosmos-sdk/v43/x/authz"
+	bank "github.com/cosmos/cosmos-sdk/v43/x/bank/types"
+	staking "github.com/cosmos/cosmos-sdk/v43/x/staking/types"
 )
 
 // Flag names and values
@@ -60,7 +60,7 @@ func NewCmdGrantAuthorization() *cobra.Command {
 
 Examples:
  $ %s tx %s grant cosmos1skjw.. send %s --spend-limit=1000stake --from=cosmos1skl..
- $ %s tx %s grant cosmos1skjw.. generic --msg-type=/cosmos.gov.v1beta1.MsgVote --from=cosmos1sk..
+ $ %s tx %s grant cosmos1skjw.. generic --msg-type=/cosmos.gov.v43beta1.MsgVote --from=cosmos1sk..
 	`, version.AppName, authz.ModuleName, bank.SendAuthorization{}.MsgTypeURL(), version.AppName, authz.ModuleName),
 		),
 		Args: cobra.ExactArgs(2),

@@ -9,9 +9,9 @@ import (
 	"github.com/tendermint/tendermint/crypto/armor"
 	"github.com/tendermint/tendermint/crypto/xsalsa20symmetric"
 
-	"github.com/cosmos/cosmos-sdk/codec/legacy"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/cosmos/cosmos-sdk/v43/codec/legacy"
+	cryptotypes "github.com/cosmos/cosmos-sdk/v43/crypto/types"
+	sdkerrors "github.com/cosmos/cosmos-sdk/v43/types/errors"
 )
 
 const (

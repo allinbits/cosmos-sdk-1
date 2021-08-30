@@ -1,13 +1,13 @@
 package types
 
 import (
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/types"
+	"github.com/cosmos/cosmos-sdk/v43/codec"
+	"github.com/cosmos/cosmos-sdk/v43/codec/types"
 )
 
 const (
 	// MsgInterfaceProtoName defines the protobuf name of the cosmos Msg interface
-	MsgInterfaceProtoName = "cosmos.base.v1beta1.Msg"
+	MsgInterfaceProtoName = "cosmos.base.v43beta1.Msg"
 )
 
 // RegisterLegacyAminoCodec registers the sdk message type.

@@ -6,12 +6,12 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/cosmos/cosmos-sdk/simapp"
-	v034staking "github.com/cosmos/cosmos-sdk/x/staking/migrations/v034"
-	v038staking "github.com/cosmos/cosmos-sdk/x/staking/migrations/v038"
-	v040staking "github.com/cosmos/cosmos-sdk/x/staking/migrations/v040"
+	"github.com/cosmos/cosmos-sdk/v43/client"
+	"github.com/cosmos/cosmos-sdk/v43/crypto/keys/ed25519"
+	"github.com/cosmos/cosmos-sdk/v43/simapp"
+	v034staking "github.com/cosmos/cosmos-sdk/v43/x/staking/migrations/v034"
+	v038staking "github.com/cosmos/cosmos-sdk/v43/x/staking/migrations/v038"
+	v040staking "github.com/cosmos/cosmos-sdk/v43/x/staking/migrations/v040"
 )
 
 func TestMigrate(t *testing.T) {

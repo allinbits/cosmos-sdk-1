@@ -7,12 +7,12 @@ package v038
 import (
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/codec/legacy"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/bech32/legacybech32"
-	v034staking "github.com/cosmos/cosmos-sdk/x/staking/migrations/v034"
-	v036staking "github.com/cosmos/cosmos-sdk/x/staking/migrations/v036"
+	"github.com/cosmos/cosmos-sdk/v43/codec/legacy"
+	cryptotypes "github.com/cosmos/cosmos-sdk/v43/crypto/types"
+	sdk "github.com/cosmos/cosmos-sdk/v43/types"
+	"github.com/cosmos/cosmos-sdk/v43/types/bech32/legacybech32"
+	v034staking "github.com/cosmos/cosmos-sdk/v43/x/staking/migrations/v034"
+	v036staking "github.com/cosmos/cosmos-sdk/v43/x/staking/migrations/v036"
 )
 
 const (

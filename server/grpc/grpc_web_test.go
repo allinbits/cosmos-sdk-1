@@ -19,11 +19,11 @@ import (
 	"github.com/stretchr/testify/suite"
 	"google.golang.org/grpc/codes"
 
-	"github.com/cosmos/cosmos-sdk/client/grpc/tmservice"
-	"github.com/cosmos/cosmos-sdk/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/cosmos/cosmos-sdk/v43/client/grpc/tmservice"
+	"github.com/cosmos/cosmos-sdk/v43/codec"
+	cryptotypes "github.com/cosmos/cosmos-sdk/v43/crypto/types"
+	"github.com/cosmos/cosmos-sdk/v43/testutil/network"
+	banktypes "github.com/cosmos/cosmos-sdk/v43/x/bank/types"
 )
 
 // https://github.com/improbable-eng/grpc-web/blob/master/go/grpcweb/wrapper_test.go used as a reference
@@ -65,7 +65,7 @@ func (s *GRPCWebTestSuite) Test_Latest_Validators() {
 	val := s.network.Validators[0]
 	for _, contentType := range []string{grpcWebContentType} {
 		headers, trailers, responses, err := s.makeGrpcRequest(
-			"/cosmos.base.tendermint.v1beta1.Service/GetLatestValidatorSet",
+			"/cosmos.base.tendermint.v43beta1.Service/GetLatestValidatorSet",
 			headerWithFlag(),
 			serializeProtoMessages([]proto.Message{&tmservice.GetLatestValidatorSetRequest{}}), false)
 
@@ -85,7 +85,7 @@ func (s *GRPCWebTestSuite) Test_Latest_Validators() {
 func (s *GRPCWebTestSuite) Test_Total_Supply() {
 	for _, contentType := range []string{grpcWebContentType} {
 		headers, trailers, responses, err := s.makeGrpcRequest(
-			"/cosmos.bank.v1beta1.Query/TotalSupply",
+			"/cosmos.bank.v43beta1.Query/TotalSupply",
 			headerWithFlag(),
 			serializeProtoMessages([]proto.Message{&banktypes.QueryTotalSupplyRequest{}}), false)
 
