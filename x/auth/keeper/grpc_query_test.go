@@ -5,9 +5,9 @@ import (
 	"context"
 	"bytes"
 
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/cosmos/cosmos-sdk/v42/testutil/testdata"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
+	"github.com/cosmos/cosmos-sdk/v42/x/auth/types"
 )
 
 const addrStr = "cosmos13c3d4wq2t22dl0dstraf8jc3f902e3fsy9n3wv"

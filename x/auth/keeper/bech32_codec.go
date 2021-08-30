@@ -1,10 +1,10 @@
 package keeper
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
-	"github.com/cosmos/cosmos-sdk/types/bech32"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
+	"github.com/cosmos/cosmos-sdk/v42/types/address"
+	"github.com/cosmos/cosmos-sdk/v42/types/bech32"
+	sdkerrors "github.com/cosmos/cosmos-sdk/v42/types/errors"
 )
 
 type bech32Codec struct {

@@ -5,10 +5,10 @@ import (
 	"math/rand"
 	"time"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/feegrant"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
+	"github.com/cosmos/cosmos-sdk/v42/types/module"
+	simtypes "github.com/cosmos/cosmos-sdk/v42/types/simulation"
+	"github.com/cosmos/cosmos-sdk/v42/x/feegrant"
 )
 
 // genFeeGrants returns a slice of randomly generated allowances.
@@ -49,7 +49,7 @@ func generateRandomAllowances(granter, grantee sdk.AccAddress, r *rand.Rand) fee
 
 	filteredAllowance, err := feegrant.NewGrant(granter, grantee, &feegrant.AllowedMsgAllowance{
 		Allowance:       basicAllowance.GetAllowance(),
-		AllowedMessages: []string{"/cosmos.gov.v1beta1.MsgSubmitProposal"},
+		AllowedMessages: []string{"/cosmos.gov.v42beta1.MsgSubmitProposal"},
 	})
 	if err != nil {
 		panic(err)

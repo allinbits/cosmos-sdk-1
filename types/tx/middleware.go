@@ -5,7 +5,7 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
 )
 
 // RequestSimulateTx is the request type for the tx.Handler.RequestSimulateTx

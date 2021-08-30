@@ -5,10 +5,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/ledger"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/v42/crypto/hd"
+	"github.com/cosmos/cosmos-sdk/v42/crypto/ledger"
+	"github.com/cosmos/cosmos-sdk/v42/testutil"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
 )
 
 func TestBeach32ifPbKey(t *testing.T) {

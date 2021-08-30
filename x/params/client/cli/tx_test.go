@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/x/params/client/utils"
+	"github.com/cosmos/cosmos-sdk/v42/codec"
+	"github.com/cosmos/cosmos-sdk/v42/testutil"
+	"github.com/cosmos/cosmos-sdk/v42/x/params/client/utils"
 )
 
 func TestParseProposal(t *testing.T) {

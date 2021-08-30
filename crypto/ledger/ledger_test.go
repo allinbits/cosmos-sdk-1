@@ -6,11 +6,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/codec/legacy"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/v42/codec/legacy"
+	"github.com/cosmos/cosmos-sdk/v42/crypto/hd"
+	"github.com/cosmos/cosmos-sdk/v42/crypto/types"
+	"github.com/cosmos/cosmos-sdk/v42/testutil"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
 )
 
 func TestErrorHandling(t *testing.T) {

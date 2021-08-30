@@ -5,10 +5,10 @@ import (
 
 	"github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	bankcli "github.com/cosmos/cosmos-sdk/x/bank/client/cli"
+	"github.com/cosmos/cosmos-sdk/v42/client"
+	"github.com/cosmos/cosmos-sdk/v42/testutil"
+	clitestutil "github.com/cosmos/cosmos-sdk/v42/testutil/cli"
+	bankcli "github.com/cosmos/cosmos-sdk/v42/x/bank/client/cli"
 )
 
 func MsgSendExec(clientCtx client.Context, from, to, amount fmt.Stringer, extraArgs ...string) (testutil.BufferWriter, error) {

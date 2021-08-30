@@ -5,10 +5,10 @@ import (
 	"errors"
 	"io"
 
-	"github.com/cosmos/cosmos-sdk/store/cachekv"
-	"github.com/cosmos/cosmos-sdk/store/listenkv"
-	"github.com/cosmos/cosmos-sdk/store/tracekv"
-	"github.com/cosmos/cosmos-sdk/store/types"
+	"github.com/cosmos/cosmos-sdk/v42/store/cachekv"
+	"github.com/cosmos/cosmos-sdk/v42/store/listenkv"
+	"github.com/cosmos/cosmos-sdk/v42/store/tracekv"
+	"github.com/cosmos/cosmos-sdk/v42/store/types"
 )
 
 var _ types.KVStore = Store{}

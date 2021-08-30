@@ -5,22 +5,22 @@ import (
 	"fmt"
 	"testing"
 
-	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
+	minttypes "github.com/cosmos/cosmos-sdk/v42/x/mint/types"
 
 	"github.com/stretchr/testify/suite"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/simapp"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/ante"
-	xauthsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/cosmos/cosmos-sdk/v42/client"
+	"github.com/cosmos/cosmos-sdk/v42/client/tx"
+	cryptotypes "github.com/cosmos/cosmos-sdk/v42/crypto/types"
+	"github.com/cosmos/cosmos-sdk/v42/simapp"
+	"github.com/cosmos/cosmos-sdk/v42/testutil/testdata"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
+	"github.com/cosmos/cosmos-sdk/v42/types/tx/signing"
+	"github.com/cosmos/cosmos-sdk/v42/x/auth/ante"
+	xauthsigning "github.com/cosmos/cosmos-sdk/v42/x/auth/signing"
+	"github.com/cosmos/cosmos-sdk/v42/x/auth/types"
+	authtypes "github.com/cosmos/cosmos-sdk/v42/x/auth/types"
 )
 
 // TestAccount represents an account used in the tests in x/auth/ante.
@@ -70,7 +70,7 @@ func (suite *AnteTestSuite) SetupTest(isCheckTx bool) {
 	//   still need the SetUpContextDecorator.
 	//
 	// TODO: migrate all antehandler tests to middleware tests.
-	// https://github.com/cosmos/cosmos-sdk/issues/9585
+	// https://github.com/cosmos/cosmos-sdk/v42/issues/9585
 	anteDecorators := []sdk.AnteDecorator{
 		ante.NewSetUpContextDecorator(),
 		ante.NewRejectExtensionOptionsDecorator(),

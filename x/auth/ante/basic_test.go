@@ -3,12 +3,12 @@ package ante_test
 import (
 	"strings"
 
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/crypto/types/multisig"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/ante"
+	cryptotypes "github.com/cosmos/cosmos-sdk/v42/crypto/types"
+	"github.com/cosmos/cosmos-sdk/v42/crypto/types/multisig"
+	"github.com/cosmos/cosmos-sdk/v42/testutil/testdata"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
+	"github.com/cosmos/cosmos-sdk/v42/types/tx/signing"
+	"github.com/cosmos/cosmos-sdk/v42/x/auth/ante"
 )
 
 func (suite *AnteTestSuite) TestValidateBasic() {

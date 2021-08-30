@@ -1,5 +1,5 @@
 // Package v040 is taken from:
-// https://github.com/cosmos/cosmos-sdk/blob/v0.40.1/x/staking/types/genesis.pb.go
+// https://github.com/cosmos/cosmos-sdk/v42/blob/v0.40.1/x/staking/types/genesis.pb.go
 // by copy-pasted only the relevants parts for Genesis.
 // nolint
 package v040
@@ -10,7 +10,7 @@ import (
 	math "math"
 	math_bits "math/bits"
 
-	github_com_cosmos_cosmos_sdk_types "github.com/cosmos/cosmos-sdk/types"
+	github_com_cosmos_cosmos_sdk_types "github.com/cosmos/cosmos-sdk/v42/types"
 	_ "github.com/gogo/protobuf/gogoproto"
 	proto "github.com/gogo/protobuf/proto"
 )
@@ -32,7 +32,7 @@ type GenesisState struct {
 	Params Params `protobuf:"bytes,1,opt,name=params,proto3" json:"params"`
 	// last_total_power tracks the total amounts of bonded tokens recorded during
 	// the previous end block.
-	LastTotalPower github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,2,opt,name=last_total_power,json=lastTotalPower,proto3,customtype=github.com/cosmos/cosmos-sdk/types.Int" json:"last_total_power" yaml:"last_total_power"`
+	LastTotalPower github_com_cosmos_cosmos_sdk_types.Int `protobuf:"bytes,2,opt,name=last_total_power,json=lastTotalPower,proto3,customtype=github.com/cosmos/cosmos-sdk/v42/types.Int" json:"last_total_power" yaml:"last_total_power"`
 	// last_validator_powers is a special index that provides a historical list
 	// of the last-block's bonded validators.
 	LastValidatorPowers []LastValidatorPower `protobuf:"bytes,3,rep,name=last_validator_powers,json=lastValidatorPowers,proto3" json:"last_validator_powers" yaml:"last_validator_powers"`
@@ -171,12 +171,12 @@ func (m *LastValidatorPower) XXX_DiscardUnknown() {
 var xxx_messageInfo_LastValidatorPower proto.InternalMessageInfo
 
 func init() {
-	// proto.RegisterType((*GenesisState)(nil), "cosmos.staking.v1beta1.GenesisState")
-	// proto.RegisterType((*LastValidatorPower)(nil), "cosmos.staking.v1beta1.LastValidatorPower")
+	// proto.RegisterType((*GenesisState)(nil), "cosmos.staking.v42beta1.GenesisState")
+	// proto.RegisterType((*LastValidatorPower)(nil), "cosmos.staking.v42beta1.LastValidatorPower")
 }
 
 func init() {
-	// proto.RegisterFile("cosmos/staking/v1beta1/genesis.proto", fileDescriptor_9b3dec8894f2831b)
+	// proto.RegisterFile("cosmos/staking/v42beta1/genesis.proto", fileDescriptor_9b3dec8894f2831b)
 }
 
 var fileDescriptor_9b3dec8894f2831b = []byte{

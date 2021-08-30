@@ -3,10 +3,10 @@ package keeper
 import (
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
 
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/cosmos/cosmos-sdk/v42/x/distribution/types"
+	stakingtypes "github.com/cosmos/cosmos-sdk/v42/x/staking/types"
 )
 
 // initialize starting info for a new delegation

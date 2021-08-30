@@ -9,12 +9,12 @@ import (
 
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/cosmos/cosmos-sdk/internal/conv"
-	"github.com/cosmos/cosmos-sdk/store/listenkv"
-	"github.com/cosmos/cosmos-sdk/store/tracekv"
-	"github.com/cosmos/cosmos-sdk/store/types"
-	"github.com/cosmos/cosmos-sdk/telemetry"
-	"github.com/cosmos/cosmos-sdk/types/kv"
+	"github.com/cosmos/cosmos-sdk/v42/internal/conv"
+	"github.com/cosmos/cosmos-sdk/v42/store/listenkv"
+	"github.com/cosmos/cosmos-sdk/v42/store/tracekv"
+	"github.com/cosmos/cosmos-sdk/v42/store/types"
+	"github.com/cosmos/cosmos-sdk/v42/telemetry"
+	"github.com/cosmos/cosmos-sdk/v42/types/kv"
 )
 
 // If value is nil but deleted is false, it means the parent doesn't have the

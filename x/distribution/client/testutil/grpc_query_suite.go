@@ -6,13 +6,13 @@ import (
 	"github.com/gogo/protobuf/proto"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	"github.com/cosmos/cosmos-sdk/testutil/rest"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/x/distribution/types"
+	"github.com/cosmos/cosmos-sdk/v42/testutil"
+	"github.com/cosmos/cosmos-sdk/v42/testutil/network"
+	"github.com/cosmos/cosmos-sdk/v42/testutil/rest"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
+	grpctypes "github.com/cosmos/cosmos-sdk/v42/types/grpc"
+	"github.com/cosmos/cosmos-sdk/v42/types/query"
+	"github.com/cosmos/cosmos-sdk/v42/x/distribution/types"
 )
 
 type GRPCQueryTestSuite struct {
@@ -49,7 +49,7 @@ func (s *GRPCQueryTestSuite) TestQueryParamsGRPC() {
 	}{
 		{
 			"gRPC request params",
-			fmt.Sprintf("%s/cosmos/distribution/v1beta1/params", baseURL),
+			fmt.Sprintf("%s/cosmos/distribution/v42beta1/params", baseURL),
 			&types.QueryParamsResponse{},
 			&types.QueryParamsResponse{
 				Params: types.DefaultParams(),
@@ -85,7 +85,7 @@ func (s *GRPCQueryTestSuite) TestQueryOutstandingRewardsGRPC() {
 	}{
 		{
 			"gRPC request params with wrong validator address",
-			fmt.Sprintf("%s/cosmos/distribution/v1beta1/validators/%s/outstanding_rewards", baseURL, "wrongAddress"),
+			fmt.Sprintf("%s/cosmos/distribution/v42beta1/validators/%s/outstanding_rewards", baseURL, "wrongAddress"),
 			map[string]string{},
 			true,
 			&types.QueryValidatorOutstandingRewardsResponse{},
@@ -93,7 +93,7 @@ func (s *GRPCQueryTestSuite) TestQueryOutstandingRewardsGRPC() {
 		},
 		{
 			"gRPC request params valid address",
-			fmt.Sprintf("%s/cosmos/distribution/v1beta1/validators/%s/outstanding_rewards", baseURL, val.ValAddress.String()),
+			fmt.Sprintf("%s/cosmos/distribution/v42beta1/validators/%s/outstanding_rewards", baseURL, val.ValAddress.String()),
 			map[string]string{
 				grpctypes.GRPCBlockHeightHeader: "2",
 			},
@@ -139,7 +139,7 @@ func (s *GRPCQueryTestSuite) TestQueryValidatorCommissionGRPC() {
 	}{
 		{
 			"gRPC request params with wrong validator address",
-			fmt.Sprintf("%s/cosmos/distribution/v1beta1/validators/%s/commission", baseURL, "wrongAddress"),
+			fmt.Sprintf("%s/cosmos/distribution/v42beta1/validators/%s/commission", baseURL, "wrongAddress"),
 			map[string]string{},
 			true,
 			&types.QueryValidatorCommissionResponse{},
@@ -147,7 +147,7 @@ func (s *GRPCQueryTestSuite) TestQueryValidatorCommissionGRPC() {
 		},
 		{
 			"gRPC request params valid address",
-			fmt.Sprintf("%s/cosmos/distribution/v1beta1/validators/%s/commission", baseURL, val.ValAddress.String()),
+			fmt.Sprintf("%s/cosmos/distribution/v42beta1/validators/%s/commission", baseURL, val.ValAddress.String()),
 			map[string]string{
 				grpctypes.GRPCBlockHeightHeader: "2",
 			},
@@ -189,28 +189,28 @@ func (s *GRPCQueryTestSuite) TestQuerySlashesGRPC() {
 	}{
 		{
 			"invalid validator address",
-			fmt.Sprintf("%s/cosmos/distribution/v1beta1/validators/%s/slashes", baseURL, ""),
+			fmt.Sprintf("%s/cosmos/distribution/v42beta1/validators/%s/slashes", baseURL, ""),
 			true,
 			&types.QueryValidatorSlashesResponse{},
 			nil,
 		},
 		{
 			"invalid start height",
-			fmt.Sprintf("%s/cosmos/distribution/v1beta1/validators/%s/slashes?starting_height=%s&ending_height=%s", baseURL, val.ValAddress.String(), "-1", "3"),
+			fmt.Sprintf("%s/cosmos/distribution/v42beta1/validators/%s/slashes?starting_height=%s&ending_height=%s", baseURL, val.ValAddress.String(), "-1", "3"),
 			true,
 			&types.QueryValidatorSlashesResponse{},
 			nil,
 		},
 		{
 			"invalid start height",
-			fmt.Sprintf("%s/cosmos/distribution/v1beta1/validators/%s/slashes?starting_height=%s&ending_height=%s", baseURL, val.ValAddress.String(), "1", "-3"),
+			fmt.Sprintf("%s/cosmos/distribution/v42beta1/validators/%s/slashes?starting_height=%s&ending_height=%s", baseURL, val.ValAddress.String(), "1", "-3"),
 			true,
 			&types.QueryValidatorSlashesResponse{},
 			nil,
 		},
 		{
 			"valid request get slashes",
-			fmt.Sprintf("%s/cosmos/distribution/v1beta1/validators/%s/slashes?starting_height=%s&ending_height=%s", baseURL, val.ValAddress.String(), "1", "3"),
+			fmt.Sprintf("%s/cosmos/distribution/v42beta1/validators/%s/slashes?starting_height=%s&ending_height=%s", baseURL, val.ValAddress.String(), "1", "3"),
 			false,
 			&types.QueryValidatorSlashesResponse{},
 			&types.QueryValidatorSlashesResponse{
@@ -252,7 +252,7 @@ func (s *GRPCQueryTestSuite) TestQueryDelegatorRewardsGRPC() {
 	}{
 		{
 			"wrong delegator address",
-			fmt.Sprintf("%s/cosmos/distribution/v1beta1/delegators/%s/rewards", baseURL, "wrongDelegatorAddress"),
+			fmt.Sprintf("%s/cosmos/distribution/v42beta1/delegators/%s/rewards", baseURL, "wrongDelegatorAddress"),
 			map[string]string{},
 			true,
 			&types.QueryDelegationTotalRewardsResponse{},
@@ -260,7 +260,7 @@ func (s *GRPCQueryTestSuite) TestQueryDelegatorRewardsGRPC() {
 		},
 		{
 			"valid request",
-			fmt.Sprintf("%s/cosmos/distribution/v1beta1/delegators/%s/rewards", baseURL, val.Address.String()),
+			fmt.Sprintf("%s/cosmos/distribution/v42beta1/delegators/%s/rewards", baseURL, val.Address.String()),
 			map[string]string{
 				grpctypes.GRPCBlockHeightHeader: "2",
 			},
@@ -275,7 +275,7 @@ func (s *GRPCQueryTestSuite) TestQueryDelegatorRewardsGRPC() {
 		},
 		{
 			"wrong validator address(specific validator rewards)",
-			fmt.Sprintf("%s/cosmos/distribution/v1beta1/delegators/%s/rewards/%s", baseURL, val.Address.String(), "wrongValAddress"),
+			fmt.Sprintf("%s/cosmos/distribution/v42beta1/delegators/%s/rewards/%s", baseURL, val.Address.String(), "wrongValAddress"),
 			map[string]string{},
 			true,
 			&types.QueryDelegationTotalRewardsResponse{},
@@ -283,7 +283,7 @@ func (s *GRPCQueryTestSuite) TestQueryDelegatorRewardsGRPC() {
 		},
 		{
 			"valid request(specific validator rewards)",
-			fmt.Sprintf("%s/cosmos/distribution/v1beta1/delegators/%s/rewards/%s", baseURL, val.Address.String(), val.ValAddress.String()),
+			fmt.Sprintf("%s/cosmos/distribution/v42beta1/delegators/%s/rewards/%s", baseURL, val.Address.String(), val.ValAddress.String()),
 			map[string]string{
 				grpctypes.GRPCBlockHeightHeader: "2",
 			},
@@ -324,21 +324,21 @@ func (s *GRPCQueryTestSuite) TestQueryDelegatorValidatorsGRPC() {
 	}{
 		{
 			"empty delegator address",
-			fmt.Sprintf("%s/cosmos/distribution/v1beta1/delegators/%s/validators", baseURL, ""),
+			fmt.Sprintf("%s/cosmos/distribution/v42beta1/delegators/%s/validators", baseURL, ""),
 			true,
 			&types.QueryDelegatorValidatorsResponse{},
 			nil,
 		},
 		{
 			"wrong delegator address",
-			fmt.Sprintf("%s/cosmos/distribution/v1beta1/delegators/%s/validators", baseURL, "wrongDelegatorAddress"),
+			fmt.Sprintf("%s/cosmos/distribution/v42beta1/delegators/%s/validators", baseURL, "wrongDelegatorAddress"),
 			true,
 			&types.QueryDelegatorValidatorsResponse{},
 			nil,
 		},
 		{
 			"valid request",
-			fmt.Sprintf("%s/cosmos/distribution/v1beta1/delegators/%s/validators", baseURL, val.Address.String()),
+			fmt.Sprintf("%s/cosmos/distribution/v42beta1/delegators/%s/validators", baseURL, val.Address.String()),
 			false,
 			&types.QueryDelegatorValidatorsResponse{},
 			&types.QueryDelegatorValidatorsResponse{
@@ -376,21 +376,21 @@ func (s *GRPCQueryTestSuite) TestQueryWithdrawAddressGRPC() {
 	}{
 		{
 			"empty delegator address",
-			fmt.Sprintf("%s/cosmos/distribution/v1beta1/delegators/%s/withdraw_address", baseURL, ""),
+			fmt.Sprintf("%s/cosmos/distribution/v42beta1/delegators/%s/withdraw_address", baseURL, ""),
 			true,
 			&types.QueryDelegatorWithdrawAddressResponse{},
 			nil,
 		},
 		{
 			"wrong delegator address",
-			fmt.Sprintf("%s/cosmos/distribution/v1beta1/delegators/%s/withdraw_address", baseURL, "wrongDelegatorAddress"),
+			fmt.Sprintf("%s/cosmos/distribution/v42beta1/delegators/%s/withdraw_address", baseURL, "wrongDelegatorAddress"),
 			true,
 			&types.QueryDelegatorWithdrawAddressResponse{},
 			nil,
 		},
 		{
 			"valid request",
-			fmt.Sprintf("%s/cosmos/distribution/v1beta1/delegators/%s/withdraw_address", baseURL, val.Address.String()),
+			fmt.Sprintf("%s/cosmos/distribution/v42beta1/delegators/%s/withdraw_address", baseURL, val.Address.String()),
 			false,
 			&types.QueryDelegatorWithdrawAddressResponse{},
 			&types.QueryDelegatorWithdrawAddressResponse{
@@ -432,7 +432,7 @@ func (s *GRPCQueryTestSuite) TestQueryValidatorCommunityPoolGRPC() {
 	}{
 		{
 			"gRPC request params with wrong validator address",
-			fmt.Sprintf("%s/cosmos/distribution/v1beta1/community_pool", baseURL),
+			fmt.Sprintf("%s/cosmos/distribution/v42beta1/community_pool", baseURL),
 			map[string]string{
 				grpctypes.GRPCBlockHeightHeader: "2",
 			},

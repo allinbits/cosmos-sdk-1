@@ -17,15 +17,15 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codecTypes "github.com/cosmos/cosmos-sdk/codec/types"
-	snapshottypes "github.com/cosmos/cosmos-sdk/snapshots/types"
-	"github.com/cosmos/cosmos-sdk/store/cachemulti"
-	"github.com/cosmos/cosmos-sdk/store/iavl"
-	sdkmaps "github.com/cosmos/cosmos-sdk/store/internal/maps"
-	"github.com/cosmos/cosmos-sdk/store/listenkv"
-	"github.com/cosmos/cosmos-sdk/store/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/cosmos/cosmos-sdk/v42/codec"
+	codecTypes "github.com/cosmos/cosmos-sdk/v42/codec/types"
+	snapshottypes "github.com/cosmos/cosmos-sdk/v42/snapshots/types"
+	"github.com/cosmos/cosmos-sdk/v42/store/cachemulti"
+	"github.com/cosmos/cosmos-sdk/v42/store/iavl"
+	sdkmaps "github.com/cosmos/cosmos-sdk/v42/store/internal/maps"
+	"github.com/cosmos/cosmos-sdk/v42/store/listenkv"
+	"github.com/cosmos/cosmos-sdk/v42/store/types"
+	sdkerrors "github.com/cosmos/cosmos-sdk/v42/types/errors"
 )
 
 func TestStoreType(t *testing.T) {
@@ -821,7 +821,7 @@ func BenchmarkMultistoreSnapshotRestore1M(b *testing.B) {
 }
 
 func benchmarkMultistoreSnapshot(b *testing.B, stores uint8, storeKeys uint64) {
-	b.Skip("Noisy with slow setup time, please see https://github.com/cosmos/cosmos-sdk/issues/8855.")
+	b.Skip("Noisy with slow setup time, please see https://github.com/cosmos/cosmos-sdk/v42/issues/8855.")
 
 	b.ReportAllocs()
 	b.StopTimer()
@@ -851,7 +851,7 @@ func benchmarkMultistoreSnapshot(b *testing.B, stores uint8, storeKeys uint64) {
 }
 
 func benchmarkMultistoreSnapshotRestore(b *testing.B, stores uint8, storeKeys uint64) {
-	b.Skip("Noisy with slow setup time, please see https://github.com/cosmos/cosmos-sdk/issues/8855.")
+	b.Skip("Noisy with slow setup time, please see https://github.com/cosmos/cosmos-sdk/v42/issues/8855.")
 
 	b.ReportAllocs()
 	b.StopTimer()

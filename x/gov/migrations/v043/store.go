@@ -3,11 +3,11 @@ package v043
 import (
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/store/prefix"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
+	"github.com/cosmos/cosmos-sdk/v42/codec"
+	"github.com/cosmos/cosmos-sdk/v42/store/prefix"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
+	"github.com/cosmos/cosmos-sdk/v42/types/address"
+	"github.com/cosmos/cosmos-sdk/v42/x/gov/types"
 )
 
 const proposalIDLen = 8

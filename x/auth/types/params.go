@@ -5,7 +5,7 @@ import (
 
 	yaml "gopkg.in/yaml.v2"
 
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
+	paramtypes "github.com/cosmos/cosmos-sdk/v42/x/params/types"
 )
 
 // Default parameter values

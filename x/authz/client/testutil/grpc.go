@@ -4,18 +4,18 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/testutil/rest"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/authz"
-	"github.com/cosmos/cosmos-sdk/x/authz/client/cli"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/cosmos/cosmos-sdk/v42/client/flags"
+	"github.com/cosmos/cosmos-sdk/v42/testutil/rest"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
+	"github.com/cosmos/cosmos-sdk/v42/x/authz"
+	"github.com/cosmos/cosmos-sdk/v42/x/authz/client/cli"
+	banktypes "github.com/cosmos/cosmos-sdk/v42/x/bank/types"
 )
 
 func (s *IntegrationTestSuite) TestQueryGrantGRPC() {
 	val := s.network.Validators[0]
 	grantee := s.grantee[1]
-	grantsURL := val.APIAddress + "/cosmos/authz/v1beta1/grants?granter=%s&grantee=%s&msg_type_url=%s"
+	grantsURL := val.APIAddress + "/cosmos/authz/v42beta1/grants?granter=%s&grantee=%s&msg_type_url=%s"
 	testCases := []struct {
 		name      string
 		url       string
@@ -82,7 +82,7 @@ func (s *IntegrationTestSuite) TestQueryGrantGRPC() {
 func (s *IntegrationTestSuite) TestQueryGrantsGRPC() {
 	val := s.network.Validators[0]
 	grantee := s.grantee[1]
-	grantsURL := val.APIAddress + "/cosmos/authz/v1beta1/grants?granter=%s&grantee=%s"
+	grantsURL := val.APIAddress + "/cosmos/authz/v42beta1/grants?granter=%s&grantee=%s"
 	testCases := []struct {
 		name      string
 		url       string

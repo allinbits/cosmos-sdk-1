@@ -3,15 +3,15 @@ package keeper
 import (
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/store/prefix"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	vestexported "github.com/cosmos/cosmos-sdk/x/auth/vesting/exported"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
+	"github.com/cosmos/cosmos-sdk/v42/codec"
+	"github.com/cosmos/cosmos-sdk/v42/store/prefix"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
+	sdkerrors "github.com/cosmos/cosmos-sdk/v42/types/errors"
+	"github.com/cosmos/cosmos-sdk/v42/types/query"
+	authtypes "github.com/cosmos/cosmos-sdk/v42/x/auth/types"
+	vestexported "github.com/cosmos/cosmos-sdk/v42/x/auth/vesting/exported"
+	"github.com/cosmos/cosmos-sdk/v42/x/bank/types"
+	paramtypes "github.com/cosmos/cosmos-sdk/v42/x/params/types"
 )
 
 var _ Keeper = (*BaseKeeper)(nil)

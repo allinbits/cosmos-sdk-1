@@ -3,9 +3,9 @@ package ante
 import (
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
+	sdkerrors "github.com/cosmos/cosmos-sdk/v42/types/errors"
+	"github.com/cosmos/cosmos-sdk/v42/x/auth/migrations/legacytx"
 )
 
 var (

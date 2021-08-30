@@ -12,9 +12,9 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/server/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/v42/client/flags"
+	"github.com/cosmos/cosmos-sdk/v42/server/types"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
 )
 
 const (

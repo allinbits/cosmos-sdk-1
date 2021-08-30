@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/tx"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
+	"github.com/cosmos/cosmos-sdk/v42/types/tx"
 )
 
 // ComposeMiddlewares compose multiple middlewares on top of a tx.Handler. The
@@ -56,7 +56,7 @@ func NewDefaultTxHandler(options TxHandlerOptions) (tx.Handler, error) {
 		// emitted outside of this middleware.
 		NewIndexEventsTxMiddleware(options.IndexEvents),
 		// Temporary middleware to bundle antehandlers.
-		// TODO Remove in https://github.com/cosmos/cosmos-sdk/issues/9585.
+		// TODO Remove in https://github.com/cosmos/cosmos-sdk/v42/issues/9585.
 		newLegacyAnteMiddleware(options.LegacyAnteHandler),
 	), nil
 }

@@ -1,9 +1,9 @@
 package types
 
 import (
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/v42/crypto/keys/ed25519"
+	cryptotypes "github.com/cosmos/cosmos-sdk/v42/crypto/types"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
 )
 
 // nolint:deadcode,unused,varcheck

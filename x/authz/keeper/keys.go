@@ -1,11 +1,11 @@
 package keeper
 
 import (
-	"github.com/cosmos/cosmos-sdk/internal/conv"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
-	"github.com/cosmos/cosmos-sdk/types/kv"
-	"github.com/cosmos/cosmos-sdk/x/authz"
+	"github.com/cosmos/cosmos-sdk/v42/internal/conv"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
+	"github.com/cosmos/cosmos-sdk/v42/types/address"
+	"github.com/cosmos/cosmos-sdk/v42/types/kv"
+	"github.com/cosmos/cosmos-sdk/v42/x/authz"
 )
 
 // Keys for store prefixes

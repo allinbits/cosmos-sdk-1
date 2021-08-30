@@ -9,7 +9,7 @@ import (
 	"runtime/pprof"
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/cosmos/cosmos-sdk/v42/codec"
 
 	"github.com/spf13/cobra"
 	"google.golang.org/grpc"
@@ -23,16 +23,16 @@ import (
 	"github.com/tendermint/tendermint/proxy"
 	"github.com/tendermint/tendermint/rpc/client/local"
 
-	"github.com/cosmos/cosmos-sdk/server/rosetta"
-	crgserver "github.com/cosmos/cosmos-sdk/server/rosetta/lib/server"
+	"github.com/cosmos/cosmos-sdk/v42/server/rosetta"
+	crgserver "github.com/cosmos/cosmos-sdk/v42/server/rosetta/lib/server"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/server/api"
-	"github.com/cosmos/cosmos-sdk/server/config"
-	servergrpc "github.com/cosmos/cosmos-sdk/server/grpc"
-	"github.com/cosmos/cosmos-sdk/server/types"
-	storetypes "github.com/cosmos/cosmos-sdk/store/types"
+	"github.com/cosmos/cosmos-sdk/v42/client"
+	"github.com/cosmos/cosmos-sdk/v42/client/flags"
+	"github.com/cosmos/cosmos-sdk/v42/server/api"
+	"github.com/cosmos/cosmos-sdk/v42/server/config"
+	servergrpc "github.com/cosmos/cosmos-sdk/v42/server/grpc"
+	"github.com/cosmos/cosmos-sdk/v42/server/types"
+	storetypes "github.com/cosmos/cosmos-sdk/v42/store/types"
 )
 
 // Tendermint full-node start flags

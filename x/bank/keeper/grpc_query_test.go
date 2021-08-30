@@ -4,13 +4,13 @@ import (
 	gocontext "context"
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/bank/testutil"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
-	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
+	"github.com/cosmos/cosmos-sdk/v42/testutil/testdata"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
+	"github.com/cosmos/cosmos-sdk/v42/types/query"
+	authtypes "github.com/cosmos/cosmos-sdk/v42/x/auth/types"
+	"github.com/cosmos/cosmos-sdk/v42/x/bank/testutil"
+	"github.com/cosmos/cosmos-sdk/v42/x/bank/types"
+	minttypes "github.com/cosmos/cosmos-sdk/v42/x/mint/types"
 )
 
 func (suite *IntegrationTestSuite) TestQueryBalance() {

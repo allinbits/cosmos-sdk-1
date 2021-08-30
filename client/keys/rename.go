@@ -4,9 +4,9 @@ import (
 	"bufio"
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/input"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
+	"github.com/cosmos/cosmos-sdk/v42/client"
+	"github.com/cosmos/cosmos-sdk/v42/client/input"
+	"github.com/cosmos/cosmos-sdk/v42/crypto/keyring"
 	"github.com/spf13/cobra"
 )
 

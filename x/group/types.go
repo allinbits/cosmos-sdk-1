@@ -7,9 +7,9 @@ import (
 	proto "github.com/gogo/protobuf/proto"
 	"github.com/gogo/protobuf/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/v42/codec"
+	codectypes "github.com/cosmos/cosmos-sdk/v42/codec/types"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
 )
 
 type DecisionPolicyResult struct {

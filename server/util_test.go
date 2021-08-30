@@ -13,13 +13,13 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/server"
-	"github.com/cosmos/cosmos-sdk/server/config"
-	"github.com/cosmos/cosmos-sdk/simapp"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	genutilcli "github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
+	"github.com/cosmos/cosmos-sdk/v42/client"
+	"github.com/cosmos/cosmos-sdk/v42/client/flags"
+	"github.com/cosmos/cosmos-sdk/v42/server"
+	"github.com/cosmos/cosmos-sdk/v42/server/config"
+	"github.com/cosmos/cosmos-sdk/v42/simapp"
+	sdkerrors "github.com/cosmos/cosmos-sdk/v42/types/errors"
+	genutilcli "github.com/cosmos/cosmos-sdk/v42/x/genutil/client/cli"
 )
 
 var cancelledInPreRun = errors.New("Cancelled in prerun")
@@ -386,7 +386,7 @@ func TestInterceptConfigsPreRunHandlerPrecedenceConfigDefault(t *testing.T) {
 
 // Ensure that if interceptConfigs encounters any error other than non-existen errors
 // that we correctly return the offending error, for example a permission error.
-// See https://github.com/cosmos/cosmos-sdk/issues/7578
+// See https://github.com/cosmos/cosmos-sdk/v42/issues/7578
 func TestInterceptConfigsWithBadPermissions(t *testing.T) {
 	tempDir := t.TempDir()
 	subDir := filepath.Join(tempDir, "nonPerms")

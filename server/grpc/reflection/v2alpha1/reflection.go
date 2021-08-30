@@ -7,9 +7,9 @@ import (
 	"github.com/gogo/protobuf/proto"
 	"google.golang.org/grpc"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/tx"
+	codectypes "github.com/cosmos/cosmos-sdk/v42/codec/types"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
+	"github.com/cosmos/cosmos-sdk/v42/types/tx"
 )
 
 type Config struct {

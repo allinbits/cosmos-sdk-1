@@ -11,13 +11,13 @@ import (
 
 	"github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	"github.com/cosmos/cosmos-sdk/simapp"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/v42/client"
+	"github.com/cosmos/cosmos-sdk/v42/client/flags"
+	"github.com/cosmos/cosmos-sdk/v42/crypto/hd"
+	"github.com/cosmos/cosmos-sdk/v42/crypto/keyring"
+	"github.com/cosmos/cosmos-sdk/v42/simapp"
+	"github.com/cosmos/cosmos-sdk/v42/testutil"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
 	bip39 "github.com/cosmos/go-bip39"
 )
 

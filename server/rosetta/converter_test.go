@@ -7,21 +7,21 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
+	authsigning "github.com/cosmos/cosmos-sdk/v42/x/auth/signing"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
+	"github.com/cosmos/cosmos-sdk/v42/client"
+	"github.com/cosmos/cosmos-sdk/v42/codec"
+	codectypes "github.com/cosmos/cosmos-sdk/v42/codec/types"
 
 	rosettatypes "github.com/coinbase/rosetta-sdk-go/types"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/cosmos-sdk/server/rosetta"
-	crgerrs "github.com/cosmos/cosmos-sdk/server/rosetta/lib/errors"
+	"github.com/cosmos/cosmos-sdk/v42/server/rosetta"
+	crgerrs "github.com/cosmos/cosmos-sdk/v42/server/rosetta/lib/errors"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
-	bank "github.com/cosmos/cosmos-sdk/x/bank/types"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
+	authtx "github.com/cosmos/cosmos-sdk/v42/x/auth/tx"
+	bank "github.com/cosmos/cosmos-sdk/v42/x/bank/types"
 )
 
 type ConverterTestSuite struct {

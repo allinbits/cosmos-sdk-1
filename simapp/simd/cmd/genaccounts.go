@@ -8,17 +8,17 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	"github.com/cosmos/cosmos-sdk/server"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	authvesting "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/cosmos/cosmos-sdk/v42/client"
+	"github.com/cosmos/cosmos-sdk/v42/client/flags"
+	"github.com/cosmos/cosmos-sdk/v42/codec"
+	"github.com/cosmos/cosmos-sdk/v42/crypto/keyring"
+	"github.com/cosmos/cosmos-sdk/v42/server"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
+	authtypes "github.com/cosmos/cosmos-sdk/v42/x/auth/types"
+	authvesting "github.com/cosmos/cosmos-sdk/v42/x/auth/vesting/types"
+	banktypes "github.com/cosmos/cosmos-sdk/v42/x/bank/types"
+	"github.com/cosmos/cosmos-sdk/v42/x/genutil"
+	genutiltypes "github.com/cosmos/cosmos-sdk/v42/x/genutil/types"
 )
 
 const (

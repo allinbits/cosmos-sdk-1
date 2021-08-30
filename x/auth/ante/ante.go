@@ -1,11 +1,11 @@
 package ante
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
+	sdkerrors "github.com/cosmos/cosmos-sdk/v42/types/errors"
+	"github.com/cosmos/cosmos-sdk/v42/types/tx/signing"
+	authsigning "github.com/cosmos/cosmos-sdk/v42/x/auth/signing"
+	"github.com/cosmos/cosmos-sdk/v42/x/auth/types"
 )
 
 // HandlerOptions are the options required for constructing a default SDK AnteHandler.

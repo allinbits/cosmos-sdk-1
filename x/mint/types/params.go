@@ -7,8 +7,8 @@ import (
 
 	yaml "gopkg.in/yaml.v2"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
+	paramtypes "github.com/cosmos/cosmos-sdk/v42/x/params/types"
 )
 
 // Parameter store keys

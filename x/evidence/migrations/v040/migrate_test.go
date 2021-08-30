@@ -5,11 +5,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/simapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	v038evidence "github.com/cosmos/cosmos-sdk/x/evidence/migrations/v038"
-	v040evidence "github.com/cosmos/cosmos-sdk/x/evidence/migrations/v040"
+	"github.com/cosmos/cosmos-sdk/v42/client"
+	"github.com/cosmos/cosmos-sdk/v42/simapp"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
+	v038evidence "github.com/cosmos/cosmos-sdk/v42/x/evidence/migrations/v038"
+	v040evidence "github.com/cosmos/cosmos-sdk/v42/x/evidence/migrations/v040"
 )
 
 func TestMigrate(t *testing.T) {
@@ -32,7 +32,7 @@ func TestMigrate(t *testing.T) {
 	}
 
 	migrated := v040evidence.Migrate(evidenceGenState)
-	expected := `{"evidence":[{"@type":"/cosmos.evidence.v1beta1.Equivocation","height":"20","time":"0001-01-01T00:00:00Z","power":"100","consensus_address":"cosmosvalcons1xxkueklal9vejv9unqu80w9vptyepfa99x2a3w"}]}`
+	expected := `{"evidence":[{"@type":"/cosmos.evidence.v42beta1.Equivocation","height":"20","time":"0001-01-01T00:00:00Z","power":"100","consensus_address":"cosmosvalcons1xxkueklal9vejv9unqu80w9vptyepfa99x2a3w"}]}`
 
 	bz, err := clientCtx.Codec.MarshalJSON(migrated)
 	require.NoError(t, err)

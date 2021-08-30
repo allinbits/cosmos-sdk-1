@@ -13,17 +13,17 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	eviclient "github.com/cosmos/cosmos-sdk/x/evidence/client"
-	"github.com/cosmos/cosmos-sdk/x/evidence/client/cli"
-	"github.com/cosmos/cosmos-sdk/x/evidence/keeper"
-	"github.com/cosmos/cosmos-sdk/x/evidence/simulation"
-	"github.com/cosmos/cosmos-sdk/x/evidence/types"
+	"github.com/cosmos/cosmos-sdk/v42/client"
+	"github.com/cosmos/cosmos-sdk/v42/codec"
+	codectypes "github.com/cosmos/cosmos-sdk/v42/codec/types"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
+	"github.com/cosmos/cosmos-sdk/v42/types/module"
+	simtypes "github.com/cosmos/cosmos-sdk/v42/types/simulation"
+	eviclient "github.com/cosmos/cosmos-sdk/v42/x/evidence/client"
+	"github.com/cosmos/cosmos-sdk/v42/x/evidence/client/cli"
+	"github.com/cosmos/cosmos-sdk/v42/x/evidence/keeper"
+	"github.com/cosmos/cosmos-sdk/v42/x/evidence/simulation"
+	"github.com/cosmos/cosmos-sdk/v42/x/evidence/types"
 )
 
 var (

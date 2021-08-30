@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"io/ioutil"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/x/params/types/proposal"
+	"github.com/cosmos/cosmos-sdk/v42/codec"
+	"github.com/cosmos/cosmos-sdk/v42/x/params/types/proposal"
 )
 
 type (

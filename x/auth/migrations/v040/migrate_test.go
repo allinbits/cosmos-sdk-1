@@ -6,14 +6,14 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/cosmos/cosmos-sdk/simapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	v034 "github.com/cosmos/cosmos-sdk/x/auth/migrations/v034"
-	v038auth "github.com/cosmos/cosmos-sdk/x/auth/migrations/v038"
-	v039auth "github.com/cosmos/cosmos-sdk/x/auth/migrations/v039"
-	v040auth "github.com/cosmos/cosmos-sdk/x/auth/migrations/v040"
+	"github.com/cosmos/cosmos-sdk/v42/client"
+	"github.com/cosmos/cosmos-sdk/v42/crypto/keys/secp256k1"
+	"github.com/cosmos/cosmos-sdk/v42/simapp"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
+	v034 "github.com/cosmos/cosmos-sdk/v42/x/auth/migrations/v034"
+	v038auth "github.com/cosmos/cosmos-sdk/v42/x/auth/migrations/v038"
+	v039auth "github.com/cosmos/cosmos-sdk/v42/x/auth/migrations/v039"
+	v040auth "github.com/cosmos/cosmos-sdk/v42/x/auth/migrations/v040"
 )
 
 func TestMigrate(t *testing.T) {
@@ -86,7 +86,7 @@ func TestMigrate(t *testing.T) {
 	expected := `{
   "accounts": [
     {
-      "@type": "/cosmos.auth.v1beta1.BaseAccount",
+      "@type": "/cosmos.auth.v42beta1.BaseAccount",
       "account_number": "1",
       "address": "cosmos13syh7de9xndv9wmklccpfvc0d8dcyvay4s6z6l",
       "pub_key": {
@@ -96,7 +96,7 @@ func TestMigrate(t *testing.T) {
       "sequence": "0"
     },
     {
-      "@type": "/cosmos.auth.v1beta1.ModuleAccount",
+      "@type": "/cosmos.auth.v42beta1.ModuleAccount",
       "base_account": {
         "account_number": "1",
         "address": "cosmos1v57fx2l2rt6ehujuu99u2fw05779m5e2ux4z2h",
@@ -112,7 +112,7 @@ func TestMigrate(t *testing.T) {
       ]
     },
     {
-      "@type": "/cosmos.vesting.v1beta1.BaseVestingAccount",
+      "@type": "/cosmos.vesting.v42beta1.BaseVestingAccount",
       "base_account": {
         "account_number": "1",
         "address": "cosmos18hnp9fjflrkeeqn4gmhjhzljusxzmjeartdckw",
@@ -143,7 +143,7 @@ func TestMigrate(t *testing.T) {
       ]
     },
     {
-      "@type": "/cosmos.vesting.v1beta1.ContinuousVestingAccount",
+      "@type": "/cosmos.vesting.v42beta1.ContinuousVestingAccount",
       "base_vesting_account": {
         "base_account": {
           "account_number": "1",
@@ -167,7 +167,7 @@ func TestMigrate(t *testing.T) {
       "start_time": "1580309974"
     },
     {
-      "@type": "/cosmos.vesting.v1beta1.PeriodicVestingAccount",
+      "@type": "/cosmos.vesting.v42beta1.PeriodicVestingAccount",
       "base_vesting_account": {
         "base_account": {
           "account_number": "1",
@@ -202,7 +202,7 @@ func TestMigrate(t *testing.T) {
       ]
     },
     {
-      "@type": "/cosmos.vesting.v1beta1.DelayedVestingAccount",
+      "@type": "/cosmos.vesting.v42beta1.DelayedVestingAccount",
       "base_vesting_account": {
         "base_account": {
           "account_number": "1",
@@ -225,7 +225,7 @@ func TestMigrate(t *testing.T) {
       }
     },
     {
-      "@type": "/cosmos.auth.v1beta1.BaseAccount",
+      "@type": "/cosmos.auth.v42beta1.BaseAccount",
       "account_number": "1",
       "address": "cosmos16ydaqh0fcnh4qt7a3jme4mmztm2qel5axcpw00",
       "pub_key": null,

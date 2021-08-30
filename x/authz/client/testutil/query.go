@@ -7,11 +7,11 @@ import (
 
 	tmcli "github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/authz"
-	"github.com/cosmos/cosmos-sdk/x/authz/client/cli"
+	"github.com/cosmos/cosmos-sdk/v42/client/flags"
+	clitestutil "github.com/cosmos/cosmos-sdk/v42/testutil/cli"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
+	"github.com/cosmos/cosmos-sdk/v42/x/authz"
+	"github.com/cosmos/cosmos-sdk/v42/x/authz/client/cli"
 )
 
 func (s *IntegrationTestSuite) TestQueryAuthorizations() {
@@ -161,7 +161,7 @@ func (s *IntegrationTestSuite) TestQueryAuthorization() {
 				fmt.Sprintf("--%s=json", tmcli.OutputFlag),
 			},
 			false,
-			`{"@type":"/cosmos.bank.v1beta1.SendAuthorization","spend_limit":[{"denom":"steak","amount":"100"}]}`,
+			`{"@type":"/cosmos.bank.v42beta1.SendAuthorization","spend_limit":[{"denom":"steak","amount":"100"}]}`,
 		},
 	}
 	for _, tc := range testCases {

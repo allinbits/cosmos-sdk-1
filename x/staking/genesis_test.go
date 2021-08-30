@@ -10,14 +10,14 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/cosmos/cosmos-sdk/simapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/bank/testutil"
-	"github.com/cosmos/cosmos-sdk/x/staking"
-	"github.com/cosmos/cosmos-sdk/x/staking/teststaking"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	codectypes "github.com/cosmos/cosmos-sdk/v42/codec/types"
+	"github.com/cosmos/cosmos-sdk/v42/crypto/keys/ed25519"
+	"github.com/cosmos/cosmos-sdk/v42/simapp"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
+	"github.com/cosmos/cosmos-sdk/v42/x/bank/testutil"
+	"github.com/cosmos/cosmos-sdk/v42/x/staking"
+	"github.com/cosmos/cosmos-sdk/v42/x/staking/teststaking"
+	"github.com/cosmos/cosmos-sdk/v42/x/staking/types"
 )
 
 func bootstrapGenesisTest(t *testing.T, numAddrs int) (*simapp.SimApp, sdk.Context, []sdk.AccAddress) {

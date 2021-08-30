@@ -3,8 +3,8 @@ package tx
 import (
 	fmt "fmt"
 
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/v42/codec/types"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
 )
 
 // SetMsgs takes a slice of sdk.Msg's and turn them into Any's.

@@ -11,13 +11,13 @@ import (
 	"github.com/tendermint/tendermint/libs/log"
 	tmos "github.com/tendermint/tendermint/libs/os"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/store/prefix"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	xp "github.com/cosmos/cosmos-sdk/x/upgrade/exported"
-	"github.com/cosmos/cosmos-sdk/x/upgrade/types"
+	"github.com/cosmos/cosmos-sdk/v42/codec"
+	"github.com/cosmos/cosmos-sdk/v42/store/prefix"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
+	sdkerrors "github.com/cosmos/cosmos-sdk/v42/types/errors"
+	"github.com/cosmos/cosmos-sdk/v42/types/module"
+	xp "github.com/cosmos/cosmos-sdk/v42/x/upgrade/exported"
+	"github.com/cosmos/cosmos-sdk/v42/x/upgrade/types"
 )
 
 // Deprecated: UpgradeInfoFileName file to store upgrade information

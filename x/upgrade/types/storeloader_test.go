@@ -13,10 +13,10 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/store/rootmulti"
-	store "github.com/cosmos/cosmos-sdk/store/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/cosmos/cosmos-sdk/v42/baseapp"
+	"github.com/cosmos/cosmos-sdk/v42/store/rootmulti"
+	store "github.com/cosmos/cosmos-sdk/v42/store/types"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
 )
 
 func useUpgradeLoader(height int64, upgrades *store.StoreUpgrades) func(*baseapp.BaseApp) {

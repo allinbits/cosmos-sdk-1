@@ -12,11 +12,11 @@ import (
 	"github.com/stretchr/testify/suite"
 	"gopkg.in/yaml.v2"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/bech32/legacybech32"
+	"github.com/cosmos/cosmos-sdk/v42/crypto/keys/ed25519"
+	"github.com/cosmos/cosmos-sdk/v42/crypto/keys/secp256k1"
+	cryptotypes "github.com/cosmos/cosmos-sdk/v42/crypto/types"
+	"github.com/cosmos/cosmos-sdk/v42/types"
+	"github.com/cosmos/cosmos-sdk/v42/types/bech32/legacybech32"
 )
 
 type addressTestSuite struct {

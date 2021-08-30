@@ -8,12 +8,12 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	tmtime "github.com/tendermint/tendermint/types/time"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/simapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/authz"
-	"github.com/cosmos/cosmos-sdk/x/bank/testutil"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/cosmos/cosmos-sdk/v42/baseapp"
+	"github.com/cosmos/cosmos-sdk/v42/simapp"
+	sdk "github.com/cosmos/cosmos-sdk/v42/types"
+	"github.com/cosmos/cosmos-sdk/v42/x/authz"
+	"github.com/cosmos/cosmos-sdk/v42/x/bank/testutil"
+	banktypes "github.com/cosmos/cosmos-sdk/v42/x/bank/types"
 )
 
 var bankSendAuthMsgType = banktypes.SendAuthorization{}.MsgTypeURL()
@@ -198,7 +198,7 @@ func (s *TestSuite) TestKeeperFees() {
 }
 
 // Tests that all msg events included in an authz MsgExec tx
-// Ref: https://github.com/cosmos/cosmos-sdk/issues/9501
+// Ref: https://github.com/cosmos/cosmos-sdk/v42/issues/9501
 func (s *TestSuite) TestDispatchedEvents() {
 	require := s.Require()
 	app, addrs := s.app, s.addrs

@@ -12,9 +12,9 @@ import (
 	tmtypes "github.com/tendermint/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/server/api"
-	"github.com/cosmos/cosmos-sdk/server/config"
+	"github.com/cosmos/cosmos-sdk/v42/client"
+	"github.com/cosmos/cosmos-sdk/v42/server/api"
+	"github.com/cosmos/cosmos-sdk/v42/server/config"
 )
 
 // ServerStartTime defines the time duration that the server need to stay running after startup

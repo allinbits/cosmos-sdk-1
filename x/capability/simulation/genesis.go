@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/cosmos/cosmos-sdk/x/capability/types"
+	"github.com/cosmos/cosmos-sdk/v42/types/module"
+	"github.com/cosmos/cosmos-sdk/v42/x/capability/types"
 )
 
 // Simulation parameter constants
